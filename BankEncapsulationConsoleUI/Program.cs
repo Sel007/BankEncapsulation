@@ -15,7 +15,16 @@ namespace BankEncapsulationConsoleUI
 
             double userBalance = ba.GetBalance();
 
-            Console.WriteLine($"Your current balance is: {userBalance, 0:c}" );
-        }
+            Console.WriteLine($"Your current balance is: {userBalance,0:c}");
+        
+
+            PersonalInfo info = new PersonalInfo();
+
+            Console.Write("Hello, please provide your phone number: ");
+            info.NumberFormatted = Console.ReadLine();
+
+            Console.WriteLine($"\nThis is your number correctly formatted: {info.NumberFormatted}");
+
+         }
     }
 }

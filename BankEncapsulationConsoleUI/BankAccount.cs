@@ -6,6 +6,7 @@ namespace BankEncapsulationConsoleUI
 {
     public class BankAccount
     {
+        //Field = class local variable
         private double _balance = 0;
 
         public void Deposit(double amount)
